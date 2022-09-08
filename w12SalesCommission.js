@@ -1,20 +1,5 @@
 "use strict";
-/*  Input:   sales amount; 
-    Output:  sales commission. 
-    Process: if salesman is salaried,
-                if sales amount is less than 300,
-                     no commission
-                if sales amount is greater than 300 and less or equal to 500,
-                    commission= sales amount * 0.01 
-                else,  
-                    commission= (500 * 0.01) + ((sales amount - 500) * 0.02)
-            if salesman is not salaried,
-                if sales amount is  less than 300 no commission
-                if sales amount is grater than 300 and less or equal $500,
-                    commission= sales amount * 0.02
-                else commission= (500 * 0.02) + ((sales amount - 500) * 0.03)
-*/
-let salaried = true;
+module.exports={computeSalesCommission};
 let expectedCommission = null;
 function computeSalesCommission(salaried,salesAmount){
     if(salaried){

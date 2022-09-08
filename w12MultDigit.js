@@ -1,16 +1,10 @@
-"use strict"
-
-// Addition
-function sumDigits(number){
-    let sum = 0;
-while(number > 0){
-    sum += number % 10;
-    number = Math.floor(number/10);
-}
-    return sum;
-}
-
-// Multiplication
+"use strict";
+module.exports={multDigits};
+/**
+ * 
+ * @param {number} number expected as an input 
+ * @returns {number} the product of each digits of the number
+ */
 function multDigits(number){
     let product = 1;
     let mod = 0;
@@ -21,10 +15,6 @@ function multDigits(number){
     }
         return product;
 }
-
-console.log(sumDigits(1234));
-console.log(sumDigits(102));
-console.log(sumDigits(8));
 console.log(multDigits(1234));
 console.log(multDigits(102));
 console.log(multDigits(8));
