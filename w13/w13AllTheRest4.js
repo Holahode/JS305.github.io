@@ -1,12 +1,12 @@
 "use strict";
  const assert = require("assert");
- const sumDig = require("./w12SumDigit.js");
+ const sumDig = require("../w12SumDigit.js");
  const sumDigits=sumDig.sumDigits;
- const prod = require("./w12MultDigit.js");
+ const prod = require("../w12MultDigit.js");
  const multDigits=prod.multDigits;
- const celsToFhat = require("./w12convertToFahrenheit.js");
+ const celsToFhat = require("../w12convertToFahrenheit.js");
  const convertFahrenheit=celsToFhat.convertFahrenheit;
- const dnPayt = require("./w12DownPayment.js");
+ const dnPayt = require("../w12DownPayment.js");
  const calcDownPayment=dnPayt.calcDownPayment;
    describe("tests sumDigits", function(){
     it("sumup all the digits to get 24", function(){
