@@ -61,15 +61,3 @@ function double(num){
           }
           return newArr;
           }
-
- const arr = [-10, 0, 10, 20];
-// console.log(double(10));
-// console.log(double(0));
-// console.log(double(-10));
-
-// console.log(times100(10));
-// console.log(times100(0));
-// console.log(times100(-10));
-
-// console.log(myMap(arr, double));
-console.log(myMap(arr));
