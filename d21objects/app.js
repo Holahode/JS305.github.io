@@ -53,7 +53,7 @@ function findTitles() {
     console.log("title is: ", title.value);
     alert("title:  " + title.value);
     const newID = library.length + 5000;
-        newBook.title = title;
+        newBook.title = title.value;
         newBook.author = document.getElementById("author").value;
         newBook.libraryID = newID;
     
